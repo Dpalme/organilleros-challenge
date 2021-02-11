@@ -36,6 +36,17 @@ h1, h2, .primary-button, .branding, .nav-link {
 h1 {
     font-size: 2.5rem;
     line-height: 3.75rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 3.75rem;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
 }
 
 body {
@@ -88,4 +99,25 @@ nav {
     display: inline-flex;
     flex-direction: row;
     justify-items: stretch;
+}
+
+.main-red {
+    color: var(--main-red);
+}
+
+footer {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--main-red);
+    -webkit-box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+       -moz-box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+            box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+}
+
+hr {
+    border: 1px solid #F8C572;
 }
