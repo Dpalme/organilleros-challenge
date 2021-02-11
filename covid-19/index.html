@@ -23,12 +23,82 @@
     <meta property='og:image' content=''>
 
     <!-- CSS -->
-    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/normalize.css'>
-    <link rel='stylesheet' type='text/css' href='https://dpalmer.in/Peoria/css/peoria-0-5-0.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='../css/custom-styles.css'>
 </head>
 
 <body>
-    <h1>Situación Actual y Covid-19</h1>
+    <nav>
+        <div class="container d-flex align-items-center">
+            <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
+            <button class="nav-button" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div id=nav-exit></div>
+            <div class="nav-menu flex-grow-1 text-right" id="navbarToggler">
+                <a href="../donar/" class="nav-link current">Donar</a>
+                <a href="../historia-del-oficio/" class="nav-link">Historia</a>
+                <a href="../historia-de-la-union/" class="nav-link">La Unión</a>
+                <a href="../covid-19/" class="nav-link">Covid-19</a>
+                <a href="../galeria/" class="nav-link">Galeria</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Situación Actual y Covid-19</h1>
+        <div class="row justify-content-between">
+            <div class="col-md-6 col-lg-3 pt-3 pt-lg-0 px-4">
+                <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1533186611831-df87f54ae9ae?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fCUyMm9yZ2FuJTIwZ3JpbmRlcnMlMjIlMjBtZXhpY298ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="covid">
+                <h4 class="text-center pt-3">Disminución en los días laborados</h4>
+                <p class="datosCovid text-center">Los trabajadores no asalariados, entre ellos los organilleros, trabajaban un promedio de 5.8 días a la semana en febrero de 2020, antes de la pandemia por Covid-19. Para el mes de abril, el número de días trabajados disminuyó considerablemente a 1.5 días de trabajo a la semana4</p>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3 pt-lg-0 px-4">
+                <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1581008753481-b42e0474fb40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fCUyMm9yZ2FuJTIwZ3JpbmRlcnMlMjIlMjBtZXhpY298ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="covid">
+                <h4 class="text-center pt-3">Disminución en los ingresos diarios</h4>
+                <p class="datosCovid text-center">De 242.4 pesos al día de ingresos reportados para febrero antes de las restricciones de permanencia en casa por Covid-19, las personas trabajadoras no asalariadas sufrieron una pérdida considerable de sus ingresos diarios. Para el mes de abril, reportaron ganar 50.1 pesos al día.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3 pt-lg-0 px-4">
+                <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1563657296610-d0459418a7a7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8JTIyb3JnYW4lMjBncmluZGVycyUyMiUyMG1leGljb3xlbnwwfDJ8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="covid">
+                <h4 class="text-center pt-3">Inseguridad alimentaria</h4>
+                <p class="datosCovid text-center">29% de las personas trabajadoras no asalariadas reportó haber pasado hambre durante la pandemia por Covid-19.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 pt-3 pt-lg-0 px-4">
+                <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1568635454645-b0da21651742?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8JTIyb3JnYW4lMjBncmluZGVycyUyMiUyMG1leGljb3xlbnwwfDJ8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" class="covid">
+                <h4 class="text-center pt-3">Apoyos recibidos durante la pandemia</h4>
+                <p class="datosCovid text-center">A través de la Unión de Organilleros de México, las personas organilleras han recibido algunas ayudas, entre ellas: un apoyo económico de 1500 pesos en dos exhibiciones otorgado por la Secretaría del Trabajo y Fomento al Empleo (STyFE) de la Ciudad de México; un apoyo monetario de la Secretaría de Cultura de la Ciudad de México (de 1450 pesos); apoyo alimentario en forma de despensas de parte de asociaciones civiles y una donación de cubrebocas reutilizables por parte de un proyecto de Carlos Amorales para Kurimanzutto.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
+            <hr>
+            <div class="w-50 ml-auto mr-0">
+                <div class="nav-menu w-100 text-right">
+                    <a href="../donar/" class="nav-link current">Donar</a>
+                    <a href="../historia-del-oficio/" class="nav-link">Historia</a>
+                    <a href="../historia-de-la-union/" class="nav-link">La Unión</a>
+                    <a href="../covid-19/" class="nav-link">Covid-19</a>
+                    <a href="../galeria/" class="nav-link pr-0">Galeria</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('[data-target="#navbarToggler"]').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.add('open');
+            document.getElementById('nav-exit').classList.add('navbar-exit');
+        });
+        document.getElementById('nav-exit').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.remove('open');
+            document.getElementById('nav-exit').classList.remove('navbar-exit');
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
