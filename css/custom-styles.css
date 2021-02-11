@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway:wght@400;500&display=swap');
+
+:root {
+    --main-red: #950F29;
+    --title: #2E2F3F;
+    --background-red: #540819;
+    --highlight: #FCE05E;
+    --header: #F8C572;
+    --white: #FFFFFF;
+}
+
+h1, h2, .primary-button, .branding, .nav-link {
+    font-family: 'Quattrocento', var(--font-family-sans-serif);
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-feature-settings: 'ss01' on, 'ss04' on;
+}
+
+.nav-link {
+    letter-spacing: normal;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: var(--header);
+    flex-grow: 1;
+}
+
+.nav-link.current, .nav-link:hover {
+    color: var(--highlight);
+}
+
+.branding {
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+}
+
+body {
+    font-family: 'Raleway', var(--font-family-sans-serif);
+    font-size: 1.25rem;
+}
+
+.primary-button {
+    font-size: 3rem;
+    background: var(--main-red);
+    color: var(--white);
+    line-height: 6rem;
+    width: 50%;
+    border-radius: 100px;
+}
+
+.primary-button:hover {
+    color: var(--white);
+    background-color: var(--background-red);
+    text-decoration: none;
+}
+
+.bg-cover {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../img/landingBg.jpg");
+    background-color: #BFDCF1;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav {
+    background-color: var(--main-red);
+    -webkit-box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+       -moz-box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+            box-shadow: inset -35px -35px 70px #AB112F,
+                        inset 35px 35px 70px #7F0D23;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    color: var(--white)
+}
+
+.nav-menu {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: stretch;
+}
