@@ -30,8 +30,12 @@
 <body>
     <nav>
         <div class="container d-flex align-items-center">
-            <div class="branding d-inline flex-grow-1">Unión de Organilleros</div>
-            <div class="nav-menu flex-grow-1">
+            <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
+            <button class="nav-button" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <div id=nav-exit></div>
+            <div class="nav-menu flex-grow-1 text-right" id="navbarToggler">
                 <a href="../donar/" class="nav-link current">Donar</a>
                 <a href="../historia-del-oficio/" class="nav-link">Historia</a>
                 <a href="../historia-de-la-union/" class="nav-link">La Unión</a>
@@ -51,10 +55,10 @@
                     <h2>Información</h2>
                     <p>Clabe:<br>
                         <span class="main-red">6025414926199423</span><br>
-                    Banco:<br>
-                    <span class="main-red">Banco de México</span></p>
+                        Banco:<br>
+                        <span class="main-red">Banco de México</span></p>
                 </div>
-    
+
                 <div class="w-50">
                     <h2>FORMULARIO</h2>
                 </div>
@@ -64,7 +68,7 @@
 
     <footer>
         <div class="container">
-            <div class="branding mr-3">Unión de Organilleros</div>
+            <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
             <hr>
             <div class="w-50 ml-auto mr-0">
                 <div class="nav-menu w-100 text-right">
@@ -77,6 +81,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('[data-target="#navbarToggler"]').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.add('open');
+            document.getElementById('nav-exit').classList.add('navbar-exit');
+        });
+        document.getElementById('nav-exit').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.remove('open');
+            document.getElementById('nav-exit').classList.remove('navbar-exit');
+        });
+    </script>
 </body>
 
 </html>
