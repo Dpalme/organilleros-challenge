@@ -28,24 +28,29 @@
 </head>
 
 <body>
-    <nav>
-        <div class="container d-flex align-items-center">
-            <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
-            <div class="nav-menu flex-grow-1">
-                <a href="../donar/" class="nav-link current">Donar</a>
-                <a href="../historia-del-oficio/" class="nav-link">Historia</a>
-                <a href="../historia-de-la-union/" class="nav-link">La Unión</a>
-                <a href="../covid-19/" class="nav-link">Covid-19</a>
-                <a href="../galeria/" class="nav-link">Galeria</a>
-            </div>
-            <button class="menu-button" onclick></button>
-        </div>
-    </nav>
     <div class="bg-cover">
-        <div style="width:100%;background:linear-gradient(#fff0,#fff);padding: 2.5%;">
-            <a href="./donar/" class="d-block text-center mx-auto primary-button mb-4">DONAR</a>
-            <h1 class="text-center mb-2">La Unión de Organilleros</h1>
-            <img src="./img/UpArrow.svg" alt="Up Arrow" class="d-block mx-auto">
+        <div class="w-100" style="transform: translateY(28.5%);">
+            <div style="width:100%;background:linear-gradient(#fff0,#fff);padding: 2.5%;">
+                <a href="./donar/" class="d-block text-center mx-auto primary-button mb-4">DONAR</a>
+                <h1 class="text-center mb-2">La Unión de Organilleros</h1>
+                <img src="./img/UpArrow.svg" alt="Up Arrow" class="d-block mx-auto">
+            </div>
+            <nav class="bottom-hide">
+                <div class="container d-flex align-items-center">
+                    <a href="../" class="branding flex-grow-1">Unión de Organilleros</a>
+                    <button class="nav-button" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    </button>
+                    <div id=nav-exit></div>
+                    <div class="nav-menu flex-grow-1 text-right" id="navbarToggler">
+                        <a href="../donar/" class="nav-link">Donar</a>
+                        <a href="../historia-del-oficio/" class="nav-link">Historia</a>
+                        <a href="../historia-de-la-union/" class="nav-link">La Unión</a>
+                        <a href="../covid-19/" class="nav-link">Covid-19</a>
+                        <a href="../galeria/" class="nav-link">Galeria</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>

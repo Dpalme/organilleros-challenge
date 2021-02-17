@@ -14,7 +14,8 @@ h1,
 h2,
 .primary-button,
 .branding,
-.nav-link {
+.nav-link,
+.secondary-button {
   font-family: "Quattrocento", var(--font-family-sans-serif);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -33,13 +34,16 @@ h2,
 .nav-link.current,
 .nav-link:hover {
   color: var(--highlight);
+  text-decoration: underline;
 }
 
-.branding {
+.branding, .branding:hover {
   color: white;
   font-size: 1.75rem;
   line-height: 2rem;
+  text-decoration: none;
 }
+
 
 h1 {
   font-size: 2.5rem;
@@ -77,6 +81,21 @@ body {
   text-decoration: none;
 }
 
+.secondary-button {
+  font-size: 1.25rem;
+  background: var(--main-red);
+  color: var(--white);
+  line-height: 3rem;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.secondary-button:hover {
+  color: var(--white);
+  background-color: var(--background-red);
+  text-decoration: none;
+}
+
 .bg-cover {
   min-height: 100vh;
   width: 100%;
@@ -84,9 +103,24 @@ body {
   background-color: #bfdcf1;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
+  background-attachment: fixed;
   display: flex;
   align-items: flex-end;
+}
+
+.banner-donar {
+  position: fixed;
+  height: 100vh;
+  width: 35%;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.only {
+  min-height: 70vh;
+  height: auto;
 }
 
 nav {
@@ -105,6 +139,7 @@ nav {
 }
 
 .nav-button {
+  display: block;
   background-color: transparent !important;
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   padding: 25px;
@@ -164,11 +199,19 @@ hr {
   border: 1px solid #f8c572;
 }
 
+nav.bottom-hide {
+  position: relative;
+}
+
 @media (min-width: 992px) {
   .nav-menu {
     display: -ms-inline-flexbox;
     display: inline-flex;
     flex-direction: row;
     justify-items: stretch;
+  }
+
+  .nav-button {
+    display: none;
   }
 }
