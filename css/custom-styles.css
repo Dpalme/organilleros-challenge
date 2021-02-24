@@ -19,7 +19,31 @@ h2,
   font-family: "Quattrocento", var(--font-family-sans-serif);
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  font-feature-settings: "ss01" on, "ss04" on;
+  font-feature-settings: "ss01"on, "ss04"on;
+}
+
+img {
+  object-fit: cover;
+  position: relative;
+  overflow: visible !important;
+}
+
+.img-credit {
+  display: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover > .img-credit {
+  display: block;
+  position: absolute;
+  bottom: -2rem;
+  color: black;
+  z-index: 3;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .nav-link {
@@ -37,7 +61,8 @@ h2,
   text-decoration: underline;
 }
 
-.branding, .branding:hover {
+.branding,
+.branding:hover {
   color: white;
   font-size: 1.75rem;
   line-height: 2rem;
@@ -214,4 +239,90 @@ nav.bottom-hide {
   .nav-button {
     display: none;
   }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  @keyframes slide-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0%)
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0%)
+    }
+  }
+
+  @keyframes slide-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(200px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0%)
+    }
+  }
+
+  @keyframes landing {
+    from {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  .slide-element.slide-left {
+    animation: slide-right 0.5s;
+  }
+
+  .slide-element.slide-right {
+    animation: slide-left 0.5s;
+  }
+
+  .slide-element.slide-bottom {
+    animation: slide-bottom 0.5s;
+  }
+
+  .slide-element.landing {
+    animation: landing 0.5s;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 15px
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f1f2
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dacc;
 }
