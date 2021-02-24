@@ -96,7 +96,7 @@ body {
   background: var(--main-red);
   color: var(--white);
   line-height: 6rem;
-  width: 50%;
+  min-width: 50%;
   border-radius: 100px;
 }
 
