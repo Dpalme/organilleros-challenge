@@ -18,7 +18,7 @@ h2,
 .secondary-button {
   font-family: "Quattrocento", var(--font-family-sans-serif);
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
   font-feature-settings: "ss01" on, "ss04" on;
 }
 
