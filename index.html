@@ -59,6 +59,16 @@
             </nav>
         </div>
     </div>
+    <script>
+        document.querySelector('[data-target="#navbarToggler"]').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.add('open');
+            document.getElementById('nav-exit').classList.add('navbar-exit');
+        });
+        document.getElementById('nav-exit').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.remove('open');
+            document.getElementById('nav-exit').classList.remove('navbar-exit');
+        });
+    </script>
     <script src="./fade-animations.js"></script>
 </body>
 

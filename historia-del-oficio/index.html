@@ -49,7 +49,7 @@
         <h1 class="hidden slide-right">Historia del Oficio</h1>
         <div class="col justify-content-between mt-5">
             <div class="row mb-5 align-items-center hidden slide-right">
-                <img class="img-fluid col-4 mr-5"
+                <img class="img-fluid col-md-4 mb-5 mb-md-0 mr-5"
                     src="../galeria/img/img06.jpeg"
                     alt="Foto: César Parra/WIEGO">
                 <div class="col">
@@ -73,12 +73,12 @@
                     <p class="m-0">En la actualidad, el oficio de los organilleros es reconocido como
                         patrimonio cultural de la Ciudad de México.</p>
                 </div>
-                <img class="img-fluid col-4"
+                <img class="img-fluid col-md-4 mt-5 mt-md-0"
                     src="../galeria/img/img12.jpeg"
                     alt="Foto: César Parra/WIEGO">
             </div>
             <div class="row mb-5 align-items-center hidden slide-right">
-                <img class="img-fluid col-4 mr-5"
+                <img class="img-fluid col-md-4 mb-5 mb-md-0 mr-5"
                     src="../galeria/img/img15.jpeg"
                     alt="Foto: César Parra/WIEGO">
                 <div class="col">
@@ -105,7 +105,16 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        document.querySelector('[data-target="#navbarToggler"]').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.add('open');
+            document.getElementById('nav-exit').classList.add('navbar-exit');
+        });
+        document.getElementById('nav-exit').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.remove('open');
+            document.getElementById('nav-exit').classList.remove('navbar-exit');
+        });
+    </script>
     <script src="../fade-animations.js"></script>
 </body>
 

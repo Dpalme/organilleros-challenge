@@ -97,6 +97,7 @@ body {
   color: var(--white);
   line-height: 6rem;
   min-width: 50%;
+  max-width: 812px;
   border-radius: 100px;
 }
 
@@ -136,7 +137,7 @@ body {
 .banner-donar {
   position: fixed;
   height: 100vh;
-  width: 35%;
+  width: 15%;
   right: 0;
   top: 0;
   z-index: -1;
@@ -229,6 +230,16 @@ nav.bottom-hide {
 }
 
 @media (min-width: 992px) {
+  .banner-donar {
+    position: fixed;
+    height: 100vh;
+    width: 35%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
   .nav-menu {
     display: -ms-inline-flexbox;
     display: inline-flex;

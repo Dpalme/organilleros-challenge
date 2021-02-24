@@ -53,7 +53,7 @@
         <h1 class="hidden slide-right">Historia de la Unión</h1>
         <div class="col justify-content-between mt-5">
             <div class="row mb-5 align-items-center hidden slide-left">
-                <div class="img-container col-4 mr-5">
+                <div class="img-container col-md-4 mb-5 mb-md-0 mr-5">
                     <img class="img-fluid"
                     src="../galeria/img/img11.jpeg"
                     alt="Foto: César Parra/WIEGO">
@@ -75,7 +75,7 @@
                         en la Ciudad de México, pero con agremiados en las principales ciudades del país, entre ellas
                         Monterrey, Puebla y Guadalajara.</p>
                 </div>
-                <div class="img-container col-4">
+                <div class="img-container col-md-4 mt-5 mt-md-0">
                     <img class="img-fluid"
                     src="../galeria/img/img13.jpeg"
                     alt="Foto: César Parra/WIEGO">
@@ -84,7 +84,7 @@
             </div>
 
             <div class="row mb-5 align-items-center hidden slide-left">
-                <div class="img-container col-4 mr-5">
+                <div class="img-container col-md-4 mb-5 mb-md-0 mr-5">
                     <img class="img-fluid"
                     src="../galeria/img/img16.jpeg"
                     alt="Foto: César Parra/WIEGO">
@@ -127,7 +127,16 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        document.querySelector('[data-target="#navbarToggler"]').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.add('open');
+            document.getElementById('nav-exit').classList.add('navbar-exit');
+        });
+        document.getElementById('nav-exit').addEventListener('click', function () {
+            document.getElementById('navbarToggler').classList.remove('open');
+            document.getElementById('nav-exit').classList.remove('navbar-exit');
+        });
+    </script>
     <script src="../fade-animations.js"></script>
 </body>
 
